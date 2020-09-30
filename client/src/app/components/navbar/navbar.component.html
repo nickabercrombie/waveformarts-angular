@@ -1,0 +1,24 @@
+<div class="nav">
+    <img src="../../../assets/img/waveFormArts_lg_logo.png" alt="logo.png">
+    <div *ngIf="device" class="expansion-button" (click)="toggleNavMenu()">
+        <div class="expansion-button-line top-ebl"></div>
+        <div class="expansion-button-line"></div>
+        <div class="expansion-button-line"></div>
+    </div>
+    <!-- desktop only -->
+    <div id="nav-container-lg" *ngIf="!device">
+        <button id="nav-button-lg" mat-raised-button>Home</button>
+        <button id="nav-button-lg" mat-raised-button>About Us</button>
+        <button id="nav-button-lg" mat-raised-button>Clients</button>
+        <button id="nav-button-lg" mat-raised-button>Account</button>
+        <button id="nav-button-lg" mat-raised-button>Contact</button>
+    </div>
+    <!-- mobile only -->
+    <div id="nav-container" class="nav-button-container" *ngIf="device && deviceMenuOpen">
+        <div><button id="nav-button" mat-raised-button>Home</button></div>
+        <div><button id="nav-button" mat-raised-button>About Us</button></div>
+        <div><button id="nav-button" mat-raised-button>Clients</button></div>
+        <div><button id="nav-button" mat-raised-button>Account</button></div>
+        <div><button id="nav-button" mat-raised-button>Contact</button></div>
+    </div>
+</div>

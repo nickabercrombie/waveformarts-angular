@@ -1,0 +1,16 @@
+{
+  "name": "waveform-arts-server",
+  "version": "1.0.0",
+  "description": "Backend for Waveform Arts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "waveform-arts",
+    "waveform",
+    "arts"
+  ],
+  "author": "Nick Abercrombie",
+  "license": "ISC"
+}

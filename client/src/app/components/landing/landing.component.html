@@ -1,0 +1,28 @@
+<div *ngIf="viewHeight" class="landing-container" id="landing">
+    <br><br><br>
+    <div class="waveform-arts">
+        Waveform <div id="arts">Arts</div>
+    </div>
+    <button *ngIf="showBackButton" class="back-button" mat-raised-button (click)="showAllPanels()">back</button>
+    <div class="landing-panel" id="prod">
+        <div class="landing-panel-text">Production Audio</div>
+    </div>
+    <div class="landing-panel" id="post">
+        <div class="landing-panel-text">Post Audio</div>
+    </div>
+    <div class="landing-panel" id="photo">
+        <div class="landing-panel-text">Photo</div>
+    </div>
+    <div class="landing-panel" id="color">
+        <div class="landing-panel-text">Color Grading</div>
+    </div>
+    <div class="landing-panel" id="foley">
+        <div class="landing-panel-text">Foley Store</div>
+    </div>
+
+    <br><br><br>
+</div>
+
+<app-testimonials *ngIf="!showBackButton"></app-testimonials>
+<router-outlet></router-outlet>
+<div class="spacer"></div>

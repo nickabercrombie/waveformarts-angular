@@ -1,0 +1,103 @@
+@import '../global-keyframes.scss';
+
+.nav {
+    border-bottom: 1px solid black;
+    box-shadow: 0px 0px 10px 5px darkgrey;
+}
+
+img {
+    width: 10%;
+    max-width: 10rem;
+    min-width: 5rem;
+    padding: 1rem;
+    display: inline-block;
+    margin-right: 15%;
+}
+
+// small menu
+
+.nav-button-container {
+    opacity: 1;
+    height: 100%;
+    animation: expand 1s ease, fadeIn 3s ease;
+}
+
+#nav-button {
+    display: block;
+    margin: auto;
+    width: 90%;
+    margin-top: 1px;
+    margin-bottom: 3px;
+}
+
+// large menu
+
+#nav-container-lg {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+}
+
+#nav-button-lg {
+    display: inline;
+    margin: 1.3rem 2rem 0 .5rem;
+}
+
+.alignAsColumn {
+    display: block;
+}
+
+// - expansion button
+// - mobile only
+
+.expansion-button {
+    margin: 20px 25px 0px 0px;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    box-shadow: 0px 0px 20px -3px rgb(35, 200, 255);
+    transition: box-shadow .3s ease;
+}
+
+.expansion-button:hover {
+    box-shadow: 0px 0px 6px 4px lightgray;
+}
+
+.expansion-button-line {
+    border: 1px solid #757575;
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.top-ebl {
+    margin-top: 12px;
+}
+
+@media(max-width: 700px) {
+    #nav-button-lg {
+        margin: 1.5rem 1rem 0 0;
+    }
+}
+
+@media(min-width: 900px) {
+    #nav-button-lg {
+        margin: 1.5rem 2rem 0 .5rem;
+    }
+}
+
+@media(min-width: 1050px) {
+    #nav-button-lg {
+        margin: 2rem 2rem 0 .5rem;
+    }
+}
+
+@media(min-width: 1300px) {
+    #nav-button-lg {
+        margin: 2.6rem 2rem 0 .5rem;
+    }
+}

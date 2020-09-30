@@ -1,0 +1,91 @@
+@import '../global-keyframes.scss';
+
+.landing-container {
+    background-image: linear-gradient(to right, #55efff, #54c0f4, #45a9d0, #0180b3);
+    font-size: 200%;
+}
+
+.back-button {
+    font-size: 35%;
+    margin-left: 3.5rem;
+    border: 1px solid  1px solid #77d9e3;
+    height: 40px;
+    opacity: 1;
+    animation: expandBackButton 1s ease;
+}
+
+.waveform-arts {
+    font-size: 300%;
+    margin-bottom: 5rem;
+    margin-left: 2rem;
+    color: #ffbd07;
+    font-weight: 300;
+}
+
+#arts {
+    color: white;
+    display: inline-block;
+    margin-left: 13px;
+    font-weight: 100;
+}
+
+.arts-margin-top {
+    margin-top: 4rem;
+}
+
+
+.landing-panel-text {
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    animation: fadeIn 2s ease;
+    font-weight: 100;
+    padding: 2rem;
+}
+
+.landing-panel:hover {
+    box-shadow: 0px 0px 15px 3px #424242;
+}
+
+.spacer {
+    background-color: black;
+    height: 30rem;
+    width: 100%;
+}
+
+.landing-panel {
+    display: block;
+    margin: auto;
+    box-shadow: 0px 0px 20px -5px #424242;
+    width: 80%;
+    max-width: 40rem;
+    font-weight: 100;
+    transition: box-shadow .4s ease;
+    margin-top: 1rem;
+}
+// -------------------------
+
+@keyframes fadePanel {
+    from { opacity: 1; height: 100%; }
+    to   { opacity: 0; height: 0%; }
+}
+
+.fadeAway {
+    animation: fadePanel .7s ease;
+    opacity: 0;
+    height: 0%;
+}
+
+.display-none {
+    display: none;
+}
+
+@keyframes lowerHeight {
+    from {height: 50rem;}
+    to {height: 30rem;}
+}
+
+.lower-height {
+    height: 30rem;
+    animation: lowerHeight .2s ease;
+}
