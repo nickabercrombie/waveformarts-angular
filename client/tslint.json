@@ -99,7 +99,7 @@
           "call-signature": "onespace",
           "index-signature": "onespace",
           "parameter": "onespace",
-          "property-declaration": "onespace",
+          "property-declaration": "space",
           "variable-declaration": "onespace"
         }
       ]

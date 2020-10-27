@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { NavigationService } from 'src/app/services/navigation.service';
 
 @Component({
@@ -7,9 +6,9 @@ import { NavigationService } from 'src/app/services/navigation.service';
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.scss']
 })
-export class LandingComponent implements OnInit {
-  viewHeight: Number = window.innerHeight;
-  viewWidth: Number = window.innerWidth;
+export class LandingComponent implements OnInit, AfterViewInit {
+  viewHeight: number = window.innerHeight;
+  viewWidth: number = window.innerWidth;
   readyState = document.readyState;
   selectionMade = false;
   showBackButton = false;
@@ -29,9 +28,9 @@ export class LandingComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  
-  ngAfterViewInit() {
-    if (this.viewWidth < 665) { document.getElementById('arts').classList.add('arts-margin-top') }
+
+  ngAfterViewInit(): void {
+    if (this.viewWidth < 665) { document.getElementById('arts').classList.add('arts-margin-top'); }
     this.landing =  document.getElementById('landing');
     this.prod =     document.getElementById('prod');
     this.post =     document.getElementById('post');
@@ -45,19 +44,19 @@ export class LandingComponent implements OnInit {
     });
     this.post.addEventListener('click', () => {
       this.sortPanels(this.post);
-    })
+    });
     this.photo.addEventListener('click', () => {
       this.sortPanels(this.photo);
-    })
+    });
     this.color.addEventListener('click', () => {
       this.sortPanels(this.color);
-    })
+    });
     this.foley.addEventListener('click', () => {
       this.sortPanels(this.foley);
-    })
+    });
   }
 
-  sortPanels(save: HTMLElement) {
+  sortPanels(save: HTMLElement): void {
     console.log('this.panels = ', this.panels);
     this.toggleBackButton();
     const spliceVal = this.panels.indexOf(save, 0);
@@ -75,18 +74,18 @@ export class LandingComponent implements OnInit {
     }, 400);
   }
 
-  toggleBackButton() {
+  toggleBackButton(): void {
     console.log('what button toggle WAS = ', this.showBackButton);
-    if    (this.showBackButton === true) { this.showBackButton = false; } 
+    if    (this.showBackButton === true) { this.showBackButton = false; }
     else  { this.showBackButton = true; }
     console.log('what button toggle IS = ', this.showBackButton);
   }
 
-  panelFadeOut() {
+  panelFadeOut(): void {
 
   }
 
-  showAllPanels() {
+  showAllPanels(): void {
     this.toggleBackButton();
     this.landing.classList.remove('lower-height');
     this.panels.forEach(panel => {

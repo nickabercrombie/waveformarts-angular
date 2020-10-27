@@ -6,7 +6,6 @@ import { PhotoComponent } from './components/photo/photo.component';
 import { PostaudioComponent } from './components/postaudio/postaudio.component';
 import { ProductionaudioComponent } from './components/productionaudio/productionaudio.component';
 import { AddComponent } from './components/soundComponents/add/add.component';
-import { TableComponent } from './components/soundComponents/table/table.component';
 
 const routes: Routes = [
   { path: '',                 component: LandingComponent },
@@ -14,7 +13,7 @@ const routes: Routes = [
   { path: 'postaudio',        component: PostaudioComponent },
   { path: 'photo',            component: PhotoComponent },
   { path: 'colorgrading',     component: ColorgradingComponent },
-  { path: 'store',            component: AddComponent   },  
+  { path: 'store',            component: AddComponent   },
   //  keep ** at the bottom of this list!
   { path: '**',               component: LandingComponent }
 ];
