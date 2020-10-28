@@ -1,8 +1,11 @@
 @import '../global-keyframes.scss';
 
 .landing-container {
-    background-image: linear-gradient(to right, #55efff, #54c0f4, #45a9d0, #0180b3);
-    font-size: 200%;
+  background-image: linear-gradient(to right, #55efff, #54c0f4, #45a9d0, #0180b3);
+  font-size: 200%;
+  font-family: fira-sans-2, sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 .back-button {
