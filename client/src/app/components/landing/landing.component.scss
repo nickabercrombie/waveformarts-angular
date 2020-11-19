@@ -8,6 +8,39 @@
   font-style: normal;
 }
 
+#title {
+  animation: fadeIn 1.75s ease;
+}
+
+#subtitle {
+  animation: fadeIn 4s ease 1s;
+}
+
+#prod {
+  animation: fadeIn 4.5s ease 3s forwards;
+  opacity: 0;
+}
+
+#post {
+  animation: fadeIn 5s ease 3s forwards;
+  opacity: 0;
+}
+
+#photo {
+  animation: fadeIn 5.5s ease 3s forwards;
+  opacity: 0;
+}
+
+#color {
+  animation: fadeIn 6s ease 3s forwards;
+  opacity: 0;
+}
+
+#foley {
+  animation: fadeIn 6.5s ease 3s forwards;
+  opacity: 0;
+}
+
 .back-button {
     font-size: 35%;
     margin-left: 3.5rem;
