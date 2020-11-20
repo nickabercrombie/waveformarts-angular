@@ -12,32 +12,60 @@
   animation: fadeIn 1.75s ease;
 }
 
-#subtitle {
-  animation: fadeIn 4s ease 1s;
+.subtitle {
+  font-size: 60%;
+  font-family: prestige-elite-std, monospace;
+  font-weight: 400;
+  font-style: italic;
+  margin: 10px 10px;
+  margin-left: 5%;
+  max-width: 565px;
+  animation: fadeIn 1.75s ease forwards;
+  opacity: 0;
+}
+
+#subtitle1 {
+  animation: fadeIn 1.75s ease .15s forwards;
+  opacity: 0;
+}
+
+#subtitle2 {
+  animation: fadeIn 1.75s ease .3s forwards;
+  opacity: 0;
+}
+
+#subtitle3 {
+  animation: fadeIn 1.75s ease .6s forwards;
+  opacity: 0;
+}
+
+#subtitle4 {
+  animation: fadeIn 1.75s ease .9s forwards;
+  opacity: 0;
 }
 
 #prod {
-  animation: fadeIn 4.5s ease 3s forwards;
+  animation: fadeIn 1.75s ease 1.15s forwards;
   opacity: 0;
 }
 
 #post {
-  animation: fadeIn 5s ease 3s forwards;
+  animation: fadeIn 1.75s ease 1.25s forwards;
   opacity: 0;
 }
 
 #photo {
-  animation: fadeIn 5.5s ease 3s forwards;
+  animation: fadeIn 1.75s ease 1.35s forwards;
   opacity: 0;
 }
 
 #color {
-  animation: fadeIn 6s ease 3s forwards;
+  animation: fadeIn 1.75s ease 1.45s forwards;
   opacity: 0;
 }
 
 #foley {
-  animation: fadeIn 6.5s ease 3s forwards;
+  animation: fadeIn 1.75s ease 1.55s forwards;
   opacity: 0;
 }
 
@@ -55,12 +83,7 @@
     margin-bottom: 5rem;
     margin-left: 2rem;
     color: #000000;
-    font-weight: 300;
-}
-
-.subtitle {
-  margin-bottom: 5rem;
-  margin-left: 2.4rem;
+    font-weight: 900;
 }
 
 #arts {
@@ -85,10 +108,6 @@
     user-select: none;
 }
 
-.landing-panel:hover {
-    box-shadow: 0px 0px 20px -5px #b5b5b5;
-}
-
 .spacer {
     background-color: black;
     height: 30rem;
@@ -96,18 +115,15 @@
 }
 
 .panel-container {
-  width: 20rem;
+  width: 40%;
+  min-width: 338px;
 }
 
 .landing-panel {
-    // display: block;
-    // margin: auto;
     box-shadow: 0px 0px 20px -5px #0d4e87;
-    // width: 80%;
-    // max-width: 40rem;
     font-weight: 100;
     transition: box-shadow .4s ease;
-    // margin-top: 1rem;
+    margin-left: 2rem;
 }
 // -------------------------
 
