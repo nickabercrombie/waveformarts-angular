@@ -27,3 +27,18 @@
     from { font-size: 0%;  opacity: 0; border: 0px solid rgb(83, 199, 219); }
     to   { font-size: 35%; opacity: 1; border: 1px solid 1px solid #77d9e3; }
 }
+
+@keyframes subtitleEffect1 {
+  from { margin-left: 2%; }
+  to   { margin-left: 5%; }
+}
+
+@keyframes subtitleEffect2 {
+  from { margin-left: 5%; }
+  to   { margin-left: 15%; }
+}
+
+@keyframes subtitleEffect3 {
+  from { margin-left: 5%; }
+  to   { margin-left: 25%; }
+}

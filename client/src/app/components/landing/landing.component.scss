@@ -6,6 +6,7 @@
   font-family: fira-sans-2, sans-serif;
   font-weight: 100;
   font-style: normal;
+  height: 91vh;
 }
 
 #title {
@@ -18,54 +19,62 @@
   font-weight: 400;
   font-style: italic;
   margin: 10px 10px;
-  margin-left: 5%;
   max-width: 565px;
-  animation: fadeIn 1.75s ease forwards;
-  opacity: 0;
+  padding: 5px;
+  border-left: 3px solid black;
 }
 
 #subtitle1 {
-  animation: fadeIn 1.75s ease .15s forwards;
+  margin-left: 0;
+  animation: fadeIn 1.75s ease .15s forwards, subtitleEffect1 2s ease .1s forwards;
   opacity: 0;
 }
 
 #subtitle2 {
-  animation: fadeIn 1.75s ease .3s forwards;
+  margin-left: 0;
+  animation: fadeIn 1.75s ease .3s forwards, subtitleEffect2 2s ease .1s forwards;
   opacity: 0;
 }
 
 #subtitle3 {
-  animation: fadeIn 1.75s ease .6s forwards;
+  margin-left: 0;
+  animation: fadeIn 1.75s ease .6s forwards, subtitleEffect3 2s ease .1s forwards;
   opacity: 0;
 }
 
 #subtitle4 {
-  animation: fadeIn 1.75s ease .9s forwards;
+  margin-left: 5%;
+  animation: fadeIn 1.75s ease .9s forwards, subtitleEffect1 3s ease .15s forwards;
   opacity: 0;
 }
 
 #prod {
-  animation: fadeIn 1.75s ease 1.15s forwards;
+  animation: fadeIn 1.75s ease .85s forwards;
   opacity: 0;
 }
 
 #post {
-  animation: fadeIn 1.75s ease 1.25s forwards;
+  animation: fadeIn 1.75s ease .95s forwards;
   opacity: 0;
 }
 
 #photo {
-  animation: fadeIn 1.75s ease 1.35s forwards;
+  animation: fadeIn 1.75s ease 1.05s forwards;
   opacity: 0;
 }
 
 #color {
-  animation: fadeIn 1.75s ease 1.45s forwards;
+  animation: fadeIn 1.75s ease 1.15s forwards;
   opacity: 0;
 }
 
 #foley {
-  animation: fadeIn 1.75s ease 1.55s forwards;
+  animation: fadeIn 1.75s ease 1.25s forwards;
+  opacity: 0;
+}
+
+#music {
+  animation: fadeIn 1.75s ease 1.35s forwards;
   opacity: 0;
 }
 
@@ -124,6 +133,7 @@
     font-weight: 100;
     transition: box-shadow .4s ease;
     margin-left: 2rem;
+    margin-top: 20px;
 }
 // -------------------------
 

@@ -1,4 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { NavigationService } from 'src/app/services/navigation.service';
 
 @Component({
@@ -19,25 +20,42 @@ export class LandingComponent implements OnInit, AfterViewInit {
   photo:  HTMLElement;
   color:  HTMLElement;
   foley:  HTMLElement;
+  music:  HTMLElement;
   panels: HTMLElement[] = [];
   // ------------------
 
   landing: HTMLElement;
 
-  constructor(private nav: NavigationService) { }
+  constructor(private nav: NavigationService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
   ngAfterViewInit(): void {
     if (this.viewWidth < 665) { document.getElementById('arts').classList.add('arts-margin-top'); }
-    this.landing =  document.getElementById('landing');
     this.prod =     document.getElementById('prod');
     this.post =     document.getElementById('post');
-    this.photo =    document.getElementById('photo');
-    this.color =    document.getElementById('color');
     this.foley =    document.getElementById('foley');
-    this.panels.push(this.prod, this.post, this.photo, this.color, this.foley);
+    this.music =    document.getElementById('music');
+    this.panels.push(this.prod, this.post, this.photo, this.color, this.foley, this.music);
+  }
+
+  selected(selection: HTMLDivElement): void {
+    console.log('selection shit = ', selection.id);
+    switch (selection.id) {
+      case 'prod':
+        this.router.navigate(['productionaudio']);
+        break;
+      case 'post':
+        this.router.navigate(['postaudio']);
+        break;
+      case 'foley':
+        this.router.navigate(['productionaudio']);
+        break;
+      case 'music':
+        this.router.navigate(['productionaudio']);
+        break;
+    }
   }
 
   toggleBackButton(): void {

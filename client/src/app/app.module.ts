@@ -22,6 +22,7 @@ import { ProductionaudioComponent } from './components/productionaudio/productio
 import { PostaudioComponent } from './components/postaudio/postaudio.component';
 import { PhotoComponent } from './components/photo/photo.component';
 import { ColorgradingComponent } from './components/colorgrading/colorgrading.component';
+import { MusicComponent } from './components/music/music.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { ColorgradingComponent } from './components/colorgrading/colorgrading.co
     PostaudioComponent,
     PhotoComponent,
     ColorgradingComponent,
+    MusicComponent,
   ],
   imports: [
     BrowserModule,

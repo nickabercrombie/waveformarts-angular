@@ -6,24 +6,25 @@
     <div class="waveform-arts" id="title">
         Waveform <div id="arts">Arts</div>
     </div>
-    <div class="subtitle">providing production and post-production audio expertise to build custom sound design, convincing foley, and subtle stimulating music to make your video sound professional and complete</div>
-    <br><br><br><br>
+    <!-- <div class="subtitle">providing production and post-production audio expertise to build custom sound design, convincing foley, and subtle stimulating music to make your video sound professional and complete</div> -->
+    <div class="subtitle" id="subtitle1">production and post-production audio expertise </div>
+    <div class="subtitle" id="subtitle2">custom sound design, convincing foley, and music</div>
+    <div class="subtitle" id="subtitle3">make your video sound professional and complete</div>
+    <br><br>
     <button *ngIf="showBackButton" class="back-button" mat-raised-button (click)="showAllPanels()">back</button>
     <div class="panel-container">
-      <div class="landing-panel" id="prod">
+      <div class="landing-panel" id="prod" (click)="selected(prod)">
           <div class="landing-panel-text">Production Services</div>
       </div>
-      <div class="landing-panel" id="post">
+      <div class="landing-panel" id="post" (click)="selected(post)">
           <div class="landing-panel-text">Post Services</div>
       </div>
-      <div class="landing-panel" id="foley">
+      <div class="landing-panel" id="foley" (click)="selected(foley)">
           <div class="landing-panel-text">Foley Store</div>
+      </div>
+      <div class="landing-panel" id="music" (click)="selected(music)">
+        <div class="landing-panel-text">Music</div>
       </div>
     </div>
 
-    <br><br><br>
 </div>
-
-<app-testimonials *ngIf="!showBackButton"></app-testimonials>
-<router-outlet></router-outlet>
-<div class="spacer"></div>
