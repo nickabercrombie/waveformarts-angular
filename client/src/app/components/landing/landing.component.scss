@@ -6,7 +6,23 @@
   font-family: fira-sans-2, sans-serif;
   font-weight: 100;
   font-style: normal;
-  height: 91vh;
+}
+
+// --- title, subtitles ------------------------------------
+
+.waveform-arts {
+  font-size: 300%;
+  margin-bottom: 5rem;
+  margin-left: 2rem;
+  color: #000000;
+  font-weight: 900;
+}
+
+#arts {
+  color: white;
+  display: inline-block;
+  margin-left: 9px;
+  font-weight: 100;
 }
 
 #title {
@@ -21,7 +37,7 @@
   margin: 10px 10px;
   max-width: 565px;
   padding: 5px;
-  border-left: 3px solid black;
+  border-left: 1px solid black;
 }
 
 #subtitle1 {
@@ -42,10 +58,97 @@
   opacity: 0;
 }
 
-#subtitle4 {
+.back-button {
+    font-size: 35%;
+    margin-left: 3.5rem;
+    border: 1px solid  1px solid #77d9e3;
+    height: 40px;
+    opacity: 1;
+    animation: expandBackButton 1s ease;
+}
+
+// --- panels ------------------------------------
+
+.panel-container {
+  width: 40%;
+  min-width: 338px;
+  display: inline-block;
+}
+
+.video-container {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.257);
+  height: 397px;
+  width: 50vw;
+  margin-top: 20px;
   margin-left: 5%;
-  animation: fadeIn 1.75s ease .9s forwards, subtitleEffect1 3s ease .15s forwards;
-  opacity: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.video-container-hr {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .video-container {
+    width: 45vw;
+  }
+}
+
+@media (max-width: 740px) {
+  .video-container {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 665px) {
+  .waveform-arts {
+    font-size: 250%;
+  }
+  .video-container {
+    width: 80vw;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  .video-container-hr {
+    display: block;
+    margin: auto;
+    width: 50%;
+    border: .25px solid black;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #arts {
+    margin-top: 2rem;
+  }
+}
+
+@media(max-width: 666px) {
+  .landing-container {
+    height: 1350px;
+  }
+}
+
+.landing-panel {
+    box-shadow: 0px 0px 20px -5px #0d4e87;
+    font-weight: 100;
+    transition: box-shadow .4s ease;
+    margin-left: 2rem;
+    margin-top: 20px;
+}
+
+.landing-panel-text {
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    animation: fadeIn 2s ease;
+    font-weight: 100;
+    padding: 2rem;
+    user-select: none;
 }
 
 #prod {
@@ -55,16 +158,6 @@
 
 #post {
   animation: fadeIn 1.75s ease .95s forwards;
-  opacity: 0;
-}
-
-#photo {
-  animation: fadeIn 1.75s ease 1.05s forwards;
-  opacity: 0;
-}
-
-#color {
-  animation: fadeIn 1.75s ease 1.15s forwards;
   opacity: 0;
 }
 
@@ -78,63 +171,7 @@
   opacity: 0;
 }
 
-.back-button {
-    font-size: 35%;
-    margin-left: 3.5rem;
-    border: 1px solid  1px solid #77d9e3;
-    height: 40px;
-    opacity: 1;
-    animation: expandBackButton 1s ease;
-}
 
-.waveform-arts {
-    font-size: 300%;
-    margin-bottom: 5rem;
-    margin-left: 2rem;
-    color: #000000;
-    font-weight: 900;
-}
-
-#arts {
-    color: white;
-    display: inline-block;
-    margin-left: 13px;
-    font-weight: 100;
-}
-
-.arts-margin-top {
-    margin-top: 4rem;
-}
-
-
-.landing-panel-text {
-    padding: 1rem;
-    text-align: center;
-    color: white;
-    animation: fadeIn 2s ease;
-    font-weight: 100;
-    padding: 2rem;
-    user-select: none;
-}
-
-.spacer {
-    background-color: black;
-    height: 30rem;
-    width: 100%;
-}
-
-.panel-container {
-  width: 40%;
-  min-width: 338px;
-}
-
-.landing-panel {
-    box-shadow: 0px 0px 20px -5px #0d4e87;
-    font-weight: 100;
-    transition: box-shadow .4s ease;
-    margin-left: 2rem;
-    margin-top: 20px;
-}
 // -------------------------
 
 @keyframes fadePanel {
