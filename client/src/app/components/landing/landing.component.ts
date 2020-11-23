@@ -1,5 +1,6 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, EventEmitter, Output } from '@angular/core';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
 import { NavigationService } from 'src/app/services/navigation.service';
 
 @Component({
@@ -13,6 +14,9 @@ export class LandingComponent implements OnInit, AfterViewInit {
   readyState = document.readyState;
   selectionMade = false;
   showBackButton = false;
+  panel = new Observable<any>(subscriber => {
+    subscriber.next();
+  });
 
   // ------------------
   prod:   HTMLElement;
@@ -41,19 +45,22 @@ export class LandingComponent implements OnInit, AfterViewInit {
   }
 
   selected(selection: HTMLDivElement): void {
-    console.log('selection shit = ', selection.id);
     switch (selection.id) {
       case 'prod':
+        this.nav.changeGradient('prod');
         this.router.navigate(['productionaudio']);
         break;
       case 'post':
+        this.nav.changeGradient('post');
         this.router.navigate(['postaudio']);
         break;
       case 'foley':
-        this.router.navigate(['productionaudio']);
+        this.nav.changeGradient('foley');
+        this.router.navigate(['store']);
         break;
       case 'music':
-        this.router.navigate(['productionaudio']);
+        this.nav.changeGradient('music');
+        this.router.navigate(['music']);
         break;
     }
   }

@@ -1,0 +1,31 @@
+.router-outlet-container {
+  background-image: linear-gradient(to right, #2edded, #54c0f4, #45a9d0, #0180b3);
+  transition: background-image 1s ease;
+}
+
+.router-outlet-container1 {
+  background-image: linear-gradient(to right, #25cada, #04c7f3, #4dffff, #94f0ff);
+  transition: background-image 1s ease;
+}
+
+.der {
+  color: green;
+  background-color: yellow;
+  border: 10px solid pink;
+}
+
+.router-outlet-container2 {
+  background-image: linear-gradient(to right, #2edded, #54c0f4, #45a9d0, #0180b3);
+}
+
+.router-outlet-container3 {
+  background-image: linear-gradient(to right, #2edded, #54c0f4, #45a9d0, #0180b3);
+}
+
+.router-outlet-container4 {
+  background-image: linear-gradient(to right, #2edded, #54c0f4, #45a9d0, #0180b3);
+}
+
+#router-outlet-container {
+  transition: background-image 4s ease;
+}
